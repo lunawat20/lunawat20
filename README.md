@@ -21,4 +21,41 @@
 </p>
 
 <h3 align="center">Play a Game: Tic-Tac-Toe</h3>
-<iframe src="https://playtictactoe.org/" width="300" height="300" style="border:none;"></iframe>
+<p align="center">
+  🎮 <a href="https://playtictactoe.org/" target="_blank">Click here to play Tic-Tac-Toe</a>
+</p>
+
+<style>
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  .tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .tic-tac-toe div {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    animation: blink 1.5s infinite;
+  }
+</style>
+
+<div class="tic-tac-toe">
+  <div>X</div> <div>O</div> <div>X</div>
+  <div>O</div> <div>X</div> <div>O</div>
+  <div>X</div> <div>O</div> <div>X</div>
+</div>
